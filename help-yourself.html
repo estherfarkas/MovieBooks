@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Help Yourshelf</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 id="web_title">Help Yourself</h1>
-    <div>
-      <h3>About</h3>
-      <p>
-        Help yourself is a web page where the user inputs a discription of a
-        movie below and based on that discription the web page will determine
-        what genre the movie discription is.
-      </p>
+    <div class="container">
+      <h1 id="web_title">Help Yourself</h1>
+      <div>
+        <h3>About</h3>
+        <p>
+          Help yourself is a web page where the user inputs a discription of a
+          movie below and based on the input given the web page will determine
+          what genre the movie is.
+        </p>
+      </div>
+      <div class="input">
+        <form action="./help-yourself.html" class="form-dis">
+          <input
+            type="text"
+            name="input"
+            rows="5"
+            cols="50"
+            placeholder="Enter discription"
+          /><br />
+          <button type="submit" class="btn">Start</button>
+        </form>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img
+            id="img1"
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/9/90/The_Water_Horse_Poster.jpg/220px-The_Water_Horse_Poster.jpg"
+            width="200px"
+            height="auto"
+          />
+        </div>
+        <div class="column">
+          <img
+            id="img2"
+            src="https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Riddick_poster.jpg/220px-Riddick_poster.jpg"
+            width="200px"
+            height="auto"
+          />
+        </div>
+        <div class="column">
+          <img
+            id="img3"
+            src="https://m.media-amazon.com/images/M/MV5BNjViNWRjYWEtZTI0NC00N2E3LTk0NGQtMjY4NTM3OGNkZjY0XkEyXkFqcGdeQXVyMjUxMTY3ODM@._V1_.jpg"
+            width="200px"
+            height="auto"
+          />
+        </div>
+      </div>
+      <footer>thank you for using our webpage</footer>
     </div>
-    <div class="input">
-      <form action="./help-yourself.html">
-        <input type="text" id="discription" name="input" rows="5" cols="50"> </input>
-        <input type="submit" value="submit">
-      </form>
-    </div>
-    <div class="example-images">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/en/thumb/9/90/The_Water_Horse_Poster.jpg/220px-The_Water_Horse_Poster.jpg"
-      />
-      <img
-        src="https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Riddick_poster.jpg/220px-Riddick_poster.jpg"
-      />
-      <img
-        src="https://m.media-amazon.com/images/M/MV5BNjViNWRjYWEtZTI0NC00N2E3LTk0NGQtMjY4NTM3OGNkZjY0XkEyXkFqcGdeQXVyMjUxMTY3ODM@._V1_.jpg"
-      />
-    </div>
-    <footer></footer>
   </body>
 </html>
