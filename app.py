@@ -18,7 +18,7 @@ with open(path_to_vectorizer,'rb') as f:
 
 @app.route('/', methods=['GET','POST'])
 def main():
-   if flask.request.method == 'GET':
+    if flask.request.method == 'GET':
        return(flask.render_template('index.html'))
     if flask.request.method == 'POST':
         user_input_text = flask.request.form['input'] 
@@ -27,13 +27,13 @@ def main():
         prediction = predictions[0]
         predicted_probas = model.predict_proba(X)
         predicted_proba = predicted_probas[0]
-        precent_democrat = predicted_proba[0]
-        precent_republican = predicted_proba[1]
-        return flask.render_temple('index.html', 
+        precent_comedy = predicted_proba[0]
+        precent_drama = predicted_proba[1]
+        return flask.render_template('index.html', 
             input_text=user_input_text,
             result = prediction, 
-            precent_democrat=precent_democrat,
-            precent_republican=precent_republican)
+            precent_comedy=precent_comedy,
+            precent_drama=precent_drama)
 
 if __name__ =='__main__':
     app.run(debug=True)
